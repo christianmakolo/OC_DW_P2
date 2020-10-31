@@ -1,0 +1,329 @@
+body
+{
+	font-family: arial, sans-serif;
+	border: 1px solid #795548;
+	margin: 0;
+	padding: 0;
+	
+
+
+}
+h1, h2 
+{
+	text-transform: uppercase;
+}
+h3
+{
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+h4
+{
+	margin-top: 0;
+}
+.fa-dot-circle, .fa-circle, .fa-graduation-cap, .fa-briefcase, .fa-pencil-alt
+{
+	color: #795548;
+	margin-right: 10px;
+}
+
+
+li
+{
+	list-style-type: none;
+}
+ul
+{
+	padding: 0;
+}
+
+/*header*/
+header
+{
+	display: flex;
+	align-items: center;
+}
+#photo
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 300px;
+	width: 380px;
+	flex-shrink: 0;
+	background-color: #795548;
+}
+#photo img
+{
+	border-radius: 50%;
+	border: 2px solid black;
+	width: 225px;
+	height: 225px;
+}
+#nom
+{
+	font-size: 1.3em;
+	margin: 0 55px;
+	flex:1 1 auto;
+}
+#nom h1
+{
+	margin-bottom: 0;
+}
+#nom h2
+{
+	margin-top: 0;
+	text-transform: none;
+}
+.coleur_prenom
+{
+	color: #795548;
+}
+.souligner
+{
+	border-bottom: 2px solid #795548;
+}
+
+/*bloc*/
+main
+{
+	display: flex;
+}
+
+/*bloc de gauche*/
+
+#bloc-gauche
+{
+	display: flex;
+	flex-direction: column;
+	width: 380px;
+	flex-shrink: 0;
+	background-color: #795548;
+}
+#bloc-gauche h2
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	background-color: black;
+	color: #795548;
+	margin: 0;
+}
+address
+{
+	padding: 0 40px;
+}
+.text-a-propos
+{
+	padding: 0 40px;
+	text-align: justify;
+}
+
+/*bloc de droite*/
+#bloc-droite, #recommandations
+{
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+	margin: 0 50px;
+}
+#bloc-droite h2
+{
+	border-bottom: 3px solid #795548;
+}
+
+
+.bloc-formation, .bloc-experience
+{
+	display: flex;
+	align-items: flex-start;
+	margin-top: 50px;
+}
+.bloc-date
+{
+	display: flex;
+	align-items: flex-start;
+	flex-basis: 30%;
+}
+.bloc-detail
+{
+	flex-basis: 70%;
+}
+
+/*footer*/
+footer
+{
+	display: flex;
+	flex-direction: row;
+}
+
+#loisir
+{
+	display: flex;
+	flex-direction: column;
+	background-color: #795548;
+	width: 380px;
+	flex-shrink: 0;
+}
+#loisir h2
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	background-color: black;
+	color: #795548;
+	margin: 0;
+}
+.icone-loisir
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-grow: 1;
+}
+.cercle
+{
+	font-size: 35px;
+	border: 5px solid black;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	padding: 10px;
+	text-align: center;
+}
+#recommandantions
+{
+	padding-bottom: 30px;
+}
+#recommandations h2
+{
+	border-bottom: 3px solid #795548;
+}
+.bloc-recommandations
+{
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 10px;
+}
+.bloc-recommandations h4
+{
+	text-transform: uppercase;
+	margin: 6px 0;
+}
+.bloc-recommandations p
+{
+	margin: 5px 0;
+}
+
+.recommandations-gauche
+{
+	width: 50%;
+}
+
+/* responsive */
+@media all and (max-width: 1024px){
+
+header
+{
+	flex-direction: column;
+	
+}
+#photo
+{
+	width: 100%;
+	padding: 10px 0;
+}
+#nom
+{
+	margin: 0;
+	text-align: center;
+}
+main
+{
+	flex-direction: column;
+}
+#bloc-gauche
+{
+	width: 100%;
+	text-align: center;
+}
+#bloc-droite, #recommandations
+{
+	margin: 0;
+}
+article h2
+{
+	background-color: black;
+	color: #795548;
+	text-align: center;
+	padding: 10px 0;
+	margin: 0;
+}
+ul
+{
+	margin: 0 10px;
+}
+
+footer
+{
+	flex-direction: column-reverse;
+}
+#loisir
+{
+	width: 100%;
+	margin-top: 20px;
+}
+.icone-loisir
+{
+	padding: 30px 0;
+}
+.bloc-recommandations
+{
+	margin-top: 30px;
+	padding: 0 10px;
+	justify-content: space-around;
+}
+
+}
+
+@media all and (max-width: 540px)
+{
+
+.bloc-formation, .bloc-experience
+{
+	flex-direction: column;
+	border-bottom: 1px solid #795548;
+	padding-bottom: 15px; 
+}
+ol li:last-child
+{
+	border-bottom: none;
+	padding-bottom: 0;
+}
+.bloc-date
+{
+	flex-direction: row;
+	width: 100%;
+}
+.bloc-detail
+{
+	width: 100%;
+}
+.bloc-recommandations
+{
+	flex-direction: column;
+}
+.recommandations-gauche
+{
+	border-bottom: 1px solid #795548;
+	padding-bottom: 20px;
+}
+.recommandations-droite
+{
+	padding-top: 20px;
+}
+	
+}
